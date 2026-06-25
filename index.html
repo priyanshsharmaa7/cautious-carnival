@@ -3,338 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priyansh Sharma</title>
+<title>Priyansh Cricket Shorts</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#000;
-color:#fff;
+    font-family:Arial, sans-serif;
+    background:#000;
+    color:#fff;
+    text-align:center;
 }
 
-/* 3 Dot Menu */
-.menu-container{
-position:fixed;
-top:15px;
-right:15px;
-z-index:1000;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px 20px;
 }
 
-.menu-btn{
-background:none;
-border:none;
-color:white;
-font-size:35px;
-cursor:pointer;
-}
-
-.menu-content{
-display:none;
-position:absolute;
-right:0;
-background:#111;
-min-width:200px;
-border-radius:10px;
-overflow:hidden;
-border:1px solid #333;
-}
-
-.menu-content a{
-display:block;
-padding:14px;
-color:white;
-text-decoration:none;
-}
-
-.menu-content a:hover{
-background:#222;
-}
-
-/* Header */
-header{
-text-align:center;
-padding:70px 20px;
-background:#111;
-}
-
-.profile{
-width:180px;
-height:180px;
-object-fit:cover;
-display:block;
-margin:auto;
-border-radius:15px;
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #fff;
 }
 
 h1{
-font-size:50px;
-margin-top:20px;
+    margin-top:20px;
+    font-size:2.2rem;
 }
 
 .subtitle{
-color:#ccc;
-margin-top:10px;
+    color:#ccc;
+    margin-top:10px;
 }
 
-.social{
-margin-top:25px;
+.section{
+    background:#111;
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #333;
 }
 
-.social a{
-display:inline-block;
-padding:12px 25px;
-margin:8px;
-background:white;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:10px;
+.section h2{
+    margin-bottom:10px;
 }
 
-section{
-padding:60px 20px;
-max-width:1000px;
-margin:auto;
+a{
+    color:#fff;
+    text-decoration:none;
 }
 
-.section-title{
-text-align:center;
-font-size:35px;
-margin-bottom:25px;
+.btn{
+    display:inline-block;
+    margin:8px;
+    padding:12px 20px;
+    border:2px solid #fff;
+    border-radius:10px;
+    transition:0.3s;
 }
 
-.card{
-background:#111;
-padding:25px;
-border-radius:15px;
-border:1px solid #333;
-margin-bottom:20px;
+.btn:hover{
+    background:#fff;
+    color:#000;
 }
 
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+details{
+    background:#111;
+    margin-top:25px;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid #333;
 }
 
-.skill{
-background:#111;
-padding:20px;
-text-align:center;
-border-radius:12px;
-border:1px solid #333;
+summary{
+    cursor:pointer;
+    font-size:1.2rem;
+    font-weight:bold;
 }
 
-footer{
-text-align:center;
-padding:30px;
-border-top:1px solid #222;
-color:#999;
+.footer{
+    margin-top:40px;
+    color:#888;
+    font-size:14px;
 }
 </style>
 </head>
-
 <body>
 
-<!-- 3 Dot Menu -->
-<div class="menu-container">
-<button class="menu-btn" onclick="toggleMenu()">⋮</button>
+<div class="container">
 
-<div id="menu" class="menu-content">
-<a href="#about">About Me</a>
-<a href="#achievements">Achievements</a>
-<a href="#skills">Skills</a>
-<a href="#versions">Versions</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
+    <!-- PHOTO -->
+    <img src="profile.jpg" alt="Priyansh Sharma" class="profile-img">
 
-<header>
+    <h1>Priyansh Cricket Shorts</h1>
+    <p class="subtitle">
+        Cricket Editor • Class 12 Student • NCC Cadet
+    </p>
 
-
-<img src="https://via.placeholder.com/200" alt="Priyansh Sharma">
-<h1>PRIYANSH SHARMA</h1>
-
-<p class="subtitle">
-NCC Cadet • BCA Student • Content Creator
-</p>
-
-<div class="social">
-<a href="https://instagram.com/priyanshsharmaa_7?igsh=dDlhZHBpNTZtNnMX" target="_blank">Instagram</a>
-
-<a href="https://youtube.com/@captain_priyansh?si=bkbHZSH9UBnqmp-_" target="_blank">YouTube</a>
-</div>
-
-</header>
-
-<section id="about">
-<h2 class="section-title">About Me</h2>
-
-<div class="card">
-<p>
-Hello! I am Priyansh Sharma, an NCC Cadet, BCA Student and Content Creator. I enjoy technology, content creation, gaming and learning new skills. Tujhe Kya Chaiye Es Website Se.. Teri Bhi Jali Na?? Ye Website Bs Dosto Ke Liye Ha or Tu Mera Dushman Ha.... 😁
-Agar 12 Ke Marksheet Chaiye Tujhe Tho Apna 66% ma 24% or add karle baki ma marksheet apna dosto ko dekha diye Tu kya kara ga 😂💀
-
-Roj Lo Moj Lo Na Mela Tho Priyansh Sharma Ko Subscribe & Follow Karlo 🤗😅
-
-</p>
-</div>
-</section>
-
-<section id="achievements">
-<h2 class="section-title">Achievements</h2>
-
-<div class="card">
-<h3>CBSE Class 12</h3>
-<p>90% Score</p>
-</div>
-
-<div class="card">
-<h3>NCC B Certificate</h3>
-<p>Successfully Completed NCC B Certificate</p>
-</div>
-
-<div class="card">
-<h3>YouTube Creator</h3>
-<p>Growing Online Community</p>
-</div>
-</section>
-
-<section id="skills">
-<h2 class="section-title">Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Leadership</div>
-
-<div class="skill">Content Creation</div>
-
-<div class="skill">Video Editing</div>
-
-<div class="skill">Communication</div>
-
-<div class="skill">NCC Training</div>
-
-<div class="skill">Basic Web Design</div>
-
-
-<h3>UPI ID</h3>
-<p><strong>8076786400@fam</strong></p>
-
-<a class="btn"
-href="upi://pay?pa=8076786400@fam&pn=Priyansh%20Sharma">
-Pay via UPI
-</a>
-
-<a class="btn"
-href="https://t.me/Priyansh_Cricket_shorts"
-target="_blank">
-Telegram
-</a>
-
-</div>
-</section>
-
-<div class="card">
-    <h2>🎬 Video Editing Support</h2>
-    <p>For video editing payments, use the UPI ID below:</p>
-
-    <div class="upi-box">
-        8076786400@fam
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Priyansh Sharma. I create cricket shorts and edits.
+            Passionate about cricket, editing and content creation.
+        </p>
     </div>
+
+    <!-- SOCIAL -->
+    <div class="section">
+        <h2>Social Links</h2>
+
+        <a class="btn"
+           href="https://youtube.com/@captain_priyansh?si=bkbHZSH9UBnqmp-_"
+           target="_blank">
+           YouTube
+        </a>
+
+        <a class="btn"
+           href="https://instagram.com/priyanshsharmaa_7"
+           target="_blank">
+           Instagram
+        </a>
+    </div>
+
+    <!-- 3 DOT STYLE SECTION -->
+    <details>
+        <summary>⋮ More Information</summary>
+
+        <div style="margin-top:15px;">
+
+            <h3>Telegram</h3>
+            <p>@Priyansh_Cricket_shorts</p>
+
+            <br>
+
+            <h3>FamPay ID</h3>
+            <p>8076786400@fam</p>
+
+            <br>
+
+            <h3>Support</h3>
+            <p>
+                Donations help support cricket edits and content creation.
+            </p>
+
+        </div>
+    </details>
+
+    <div class="footer">
+        © 2026 Priyansh Cricket Shorts
+    </div>
+
 </div>
-
-<div class="card">
-    <h2>💬 Telegram Contact</h2>
-    <p>For communication, editing requests, and collaborations:</p>
-
-    <a href="https://t.me/Priyansh_Cricket_shorts" target="_blank" class="telegram-btn">
-        @Priyansh_Cricket_shorts
-    </a>
-</div>
-
-<style>
-.card{
-    background:#111;
-    border:1px solid #333;
-    border-radius:15px;
-    padding:20px;
-    margin:15px 0;
-    text-align:center;
-    color:white;
-}
-
-.upi-box{
-    background:#000;
-    border:1px solid #555;
-    border-radius:10px;
-    padding:12px;
-    font-weight:bold;
-    margin-top:10px;
-}
-
-.telegram-btn{
-    display:block;
-    background:white;
-    color:black;
-    text-decoration:none;
-    padding:12px;
-    border-radius:10px;
-    margin-top:10px;
-    font-weight:bold;
-}
-</style>
-
-<section id="versions">
-<h2 class="section-title">Website Versions</h2>
-
-<div class="card">
-<h3>Version 1.0</h3>
-<p>Website Launch</p>
-</div>
-
-<div class="card">
-<h3>Version 2.0</h3>
-<p>Added Instagram & YouTube</p>
-</div>
-
-<div class="card">
-<h3>Version 3.0</h3>
-<p>Professional Portfolio Design</p>
-</div>
-</section>
-
-<section id="contact">
-<h2 class="section-title">Contact</h2>
-
-<div class="card">
-<p>Instagram: @priyanshsharmaa_7</p>
-<p>YouTube: Captain Priyansh</p>
-</div>
-</section>
-
-<footer>
-© 2026 Priyansh Sharma | All Rights Reserved
-</footer>
-
-<script>
-function toggleMenu(){
-var menu=document.getElementById("menu");
-
-if(menu.style.display==="block"){
-menu.style.display="none";
-}else{
-menu.style.display="block";
-}
-}
-</script>
 
 </body>
 </html>
