@@ -3,255 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Priyansh Sharma | Official Website</title>
 
-<meta name="description" content="Official Website of Priyansh Sharma. Cricket Lover, Content Creator, Video Editor and Future Developer from Hapur.">
-<meta name="keywords" content="Priyansh Sharma, Priyansh Cricket Shorts, Cricket, YouTube, Hapur, Website, Video Editing">
-<meta name="author" content="Priyansh Sharma">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#ff0000">
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:linear-gradient(135deg,#050816,#0f172a,#020617);
 color:white;
+text-align:center;
 overflow-x:hidden;
 }
 
-::-webkit-scrollbar{
-width:8px;
+/* Hero Section */
+
+.hero{
+padding:40px 20px;
 }
 
-::-webkit-scrollbar-thumb{
-background:#ff0000;
-border-radius:20px;
-}
-
-header{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(0,0,0,.5),
-rgba(0,0,0,.7)),
-url("profile.jpg");
-background-size:cover;
-background-position:center;
-}
-
-.profile-img{
-width:220px;
-height:220px;
-object-fit:cover;
+.profile{
+width:130px;
+height:130px;
 border-radius:50%;
-border:5px solid white;
-box-shadow:0 0 40px red;
-animation:float 3s infinite ease-in-out;
+margin:auto;
+border:4px solid #38bdf8;
+background:rgba(255,255,255,0.1);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:50px;
+box-shadow:0 0 25px rgba(56,189,248,.6);
 }
 
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-12px);}
-100%{transform:translateY(0);}
-}
-
-header h1{
-font-size:60px;
+h1{
+font-size:2.3rem;
 margin-top:20px;
-text-shadow:0 0 20px red;
-}
-
-header p{
-font-size:22px;
-margin-top:10px;
-max-width:700px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 28px;
-margin:10px;
-background:#ff0000;
-color:white;
-text-decoration:none;
-border-radius:10px;
-transition:.4s;
 font-weight:bold;
 }
 
-.btn:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px red;
+.subtitle{
+margin-top:10px;
+color:#cbd5e1;
+font-size:1rem;
+line-height:1.7;
 }
 
-section{
-padding:80px 20px;
-max-width:1200px;
+/* About */
+
+.about{
+max-width:900px;
+margin:20px auto;
+padding:20px;
+}
+
+.about h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.about p{
+color:#d1d5db;
+line-height:1.8;
+}
+
+/* Connect */
+
+.connect{
+padding:30px 20px;
+}
+
+.connect h2{
+font-size:2rem;
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.connect p{
+color:#cbd5e1;
+margin-bottom:25px;
+}
+
+.social-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+max-width:1000px;
 margin:auto;
 }
 
 .card{
-background:#1e293b;
-padding:30px;
+padding:25px;
 border-radius:20px;
-margin-bottom:25px;
-transition:.4s;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .card:hover{
 transform:translateY(-8px);
 }
 
-h2{
-color:#60a5fa;
-margin-bottom:15px;
-font-size:35px;
+.youtube{
+background:linear-gradient(135deg,#ff0000,#ff4d4d);
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.instagram{
+background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
 }
 
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
+.telegram{
+background:linear-gradient(135deg,#0088cc,#5ebeff);
 }
+
+.fampay{
+background:linear-gradient(135deg,#00c853,#69f0ae);
+}
+
+/* Stats */
 
 .stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
+max-width:900px;
+margin:40px auto;
+padding:20px;
 }
 
 .stat{
-background:#1e293b;
-padding:30px;
-text-align:center;
+background:rgba(255,255,255,.05);
+padding:25px;
 border-radius:15px;
+backdrop-filter:blur(10px);
 }
 
 .stat h3{
-font-size:40px;
-margin-bottom:10px;
+font-size:2rem;
+color:#38bdf8;
 }
 
-input,textarea{
-width:100%;
-padding:15px;
-margin-top:10px;
-border:none;
-border-radius:10px;
-}
-
-button{
-padding:14px 25px;
-background:red;
-border:none;
-color:white;
-border-radius:10px;
-margin-top:10px;
-cursor:pointer;
-}
+/* Footer */
 
 footer{
-background:black;
-text-align:center;
-padding:40px;
+margin-top:40px;
+padding:25px;
+background:rgba(255,255,255,.05);
+color:#94a3b8;
 }
-
-@media(max-width:768px){
-
-header h1{
-font-size:38px;
-}
-
-.profile-img{
-width:170px;
-height:170px;
-}
-
-header p{
-font-size:18px;
-}
-
-}
-
 </style>
 </head>
-
 <body>
 
-<header>
+<section class="hero">
 
-<img src="profile.jpg" class="profile-img">
+<div class="profile">👑</div>
 
-<h1>🏏 PRIYANSH SHARMA</h1>
+<h1>PRIYANSH SHARMA</h1>
 
-<p>
-Cricket Lover • Content Creator • Student • Future Developer • YouTube Creator
+<p class="subtitle">
+🏏 Cricket Lover • 🎬 Content Creator <br>
+🎓 Student • 💻 Future Developer <br>
+📺 YouTube Creator
 </p>
 
-<div>
-
-<!-- PREMIUM SOCIAL SECTION -->
-<section class="social-section">
-    <h2>🌟 Connect With Me 🌟</h2>
-    <p>Follow me on all platforms and become part of my journey 🚀</p>
-
-    <div class="social-grid">
-
-
-        <a href="https://youtube.com/@priyansh_aryaa?si=4Hdt2ki8OSHOkS9w" target="_blank" class="social-btn youtube">
-            ▶️ YouTube
-            <span>Watch Latest Videos</span>
-        </a>
-
-        <a
-
-
-
- href="https://www.instagram.com/priyanshsharmaa_7?igsh=MWZ6dmxtZmZyc2dxeQ==" target="_blank" class="social-btn instagram">
-            📸 Instagram
-            <span>Photos & Reels</span>
-        </a>
-
-
-
-
-
-        <a href="t.me/PRIYANSH_CRICKET_SHORTS" target="_blank" class="social-btn telegram">
-            ✈️ Telegram
-            <span>Join Community</span>
-        </a>
-
-
-
-
-        <a href="8076786400@fam" target="_blank" class="social-btn fampay">
-            💰 FamPay
-            <span>Support Me</span>
-        </a>
-
-    </div>
 </section>
+
+<section class="about">
+
+<h2>✨ About Me</h2>
+
+<p>
+Hello! I'm Priyansh Sharma. I create cricket content, shorts videos,
+and explore technology. My goal is to grow as a creator,
+developer, and inspire people through my content journey.
+🚀
+</p>
+
+</section>
+
+<section class="connect">
+
+<h2>🌟 Connect With Me 🌟</h2>
+
+<p>Join me on all platforms and become part of my journey 🚀</p>
+
+<div class="social-grid">
+
+<a href="#" class="card youtube">
+📺 YouTube<br><br>
+Subscribe For Cricket Shorts
+</a>
+
+<a href="#" class="card instagram">
+📸 Instagram<br><br>
+Photos • Reels • Stories
+</a>
+
+<a href="#" class="card telegram">
+✈️ Telegram<br><br>
+Join My Community
+</a>
+
+<a href="#" class="card fampay">
+💳 FamPay<br><br>
+Support & Payments
+</a>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h3>12+</h3>
+<p>Age</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Passion</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Learning</p>
+</div>
 
 <style>
 .social-section{
